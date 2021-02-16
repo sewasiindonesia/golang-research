@@ -4,14 +4,14 @@ on:
     branches: [master]
 
 env:
-  HOME: "/home/runner/digital/work/"
-  GOPRIVATE: "github.com/tokopedia/*"
-  GOPATH: "/home/runner/digital/work/digital/go"
+  HOME: "/home/"
+  GOPRIVATE: "github.com/sewasiindonesia/*"
+  GOPATH: "/home/go"
   GO111MODULE: on
 
 jobs:
   test:
-    runs-on: [self-hosted, linux, x64, digital-runner-1]
+    runs-on: ubuntu-latest
     steps:
       - name: Configure git for private modules
         env:
